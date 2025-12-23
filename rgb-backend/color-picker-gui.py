@@ -36,11 +36,12 @@ def open_color_picker_via_gtk():
         green = int(color.green / 256)
         blue = int(color.blue / 256)
         #Format
-        RGB_values = (red, green, blue)
+        RGB_values = [red, green, blue]
+        # print(red, green, blue)
 
 
     color_sel.destroy()
-    return [red, green, blue]
+    return RGB_values
 
 
 open_color_picker_via_gtk()
