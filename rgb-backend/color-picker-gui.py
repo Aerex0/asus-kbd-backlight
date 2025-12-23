@@ -43,5 +43,6 @@ def open_color_picker_via_gtk():
     color_sel.destroy()
     return RGB_values
 
+if __name__ == "__main__":
+    open_color_picker_via_gtk()
 
-open_color_picker_via_gtk()
